@@ -1,0 +1,58 @@
+.wrap-list-user {
+  display: table-cell;
+}
+.wrap-list-user {
+  background-color: rgb(255, 255, 255);
+  margin-bottom: 15px;
+  padding: 10px;
+}
+.top-by-time {
+  display: table-cell;
+  width: 15%;
+}
+ul.list-infor-user {
+  display: inline-block;
+  width: 100%;
+  vertical-align: top;
+  padding: 0px;
+  margin: 0px;
+}
+.list-infor-user .user-item {
+  padding-bottom: 10px;
+  padding-top: 10px;
+  margin-bottom: 10px;
+  width: 100% !important;
+  margin-right: 0px !important;
+  border-bottom: 1px solid rgb(222, 222, 222);
+}
+.list-infor-user > li {
+  display: inline-block;
+  vertical-align: top;
+  width: 30.62%;
+  margin-bottom: 51px;
+  float: left;
+  margin-right: 2.57%;
+  list-style: none !important;
+}
+.list-infor-user li.user-item .item > .thumbnail {
+  width: 12.052%;
+  float: left;
+  max-width: 370px;
+  margin: 0px;
+}
+.list-infor-user li .item > .thumbnail {
+  display: inline-block;
+  position: relative;
+  margin-bottom: 28px;
+  width: 100%;
+  transition: opacity 0.3s ease 0s;
+}
+.list-infor-user li.user-item .item > .thumbnail img {
+  width: 80px;
+  height: 80px;
+  margin: 5px;
+}
+.list-infor-user .user-item-content {
+  padding-left: 12%;
+  margin: 0px;
+}
