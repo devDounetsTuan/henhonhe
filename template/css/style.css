@@ -8,7 +8,7 @@
 }
 .top-by-time {
   display: table-cell;
-  width: 15%;
+  width: 25%;
 }
 ul.list-infor-user {
   display: inline-block;
@@ -55,4 +55,20 @@ ul.list-infor-user {
 .list-infor-user .user-item-content {
   padding-left: 12%;
   margin: 0px;
+}
+
+.top-by-time li.user-item .item > .thumbnail {
+  width: 30%;
+    float: left;
+    max-width: 370px;
+    margin: 0px;
+}
+.top-by-time li.user-item .item > .thumbnail img {
+    width: 60px;
+    height: 60px;
+    margin: 5px;
+}
+
+.top-by-time .user-item{
+  border-bottom: none;
 }
