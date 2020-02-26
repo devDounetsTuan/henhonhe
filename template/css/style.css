@@ -72,3 +72,14 @@ ul.list-infor-user {
 .top-by-time .user-item{
   border-bottom: none;
 }
+.grid-name, .grid-age{
+  margin-bottom: .5rem;
+  font-weight: 500;
+  line-height: 1.2;
+} 
+.grid-name{
+  font-size: 2rem;
+}
+.grid-age{
+  font-size: 1.5rem;
+}
