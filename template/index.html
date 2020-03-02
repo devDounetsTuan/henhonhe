@@ -23,6 +23,7 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
     <link rel="stylesheet" href="css/style.css" />
     <title>Hello, world!</title>
+    <style></style>
   </head>
   <body>
     <nav class="navbar navbar-expand-md navbar-dark bg-dark mb-4">
@@ -72,7 +73,25 @@
       </div>
     </nav>
     <main role="main" class="container">
+      <div class="filter" style="border: 1px solid #333;">
+        <div style="padding: 5px 10px;" class="button-group filters-button-group">
+          <button class="button is-checked" data-filter="*">Nam</button>
+          <button class="button" data-filter=".metal">Nu</button>
+          <button class="button" data-filter=".transition">Gay</button>
+          <button class="button" data-filter=".alkali, .alkaline-earth">Less</button>
+          <button class="button is-checked" data-filter="*">Người yêu lâu dài</button>
+          <button class="button" data-filter=".metal">Người yêu ngắn hạn</button>
+          <button class="button" data-filter=".transition">người tâm sự</button>
+          <button class="button" data-filter=".alkali, .alkaline-earth">Tìm bạn mới</button>
+          <button class="button is-checked" data-filter="*">Độc Thân</button>
+          <button class="button" data-filter=".metal">Đang có người yêu</button>
+          <button class="button" data-filter=".transition">Đã có gia đình</button>
+        </div>
+      </div>
+
+      
       <div class="wrap-list-user">
+       
         <ul
           class="list-infor-user"
           data-xf-init="xencat-infinite "
@@ -96,7 +115,6 @@
 
                   <span class="grid-name">
                     <a data-toggle="modal" data-target="#exampleModalCenter"
-                    
                       >Tuấn Nguyễn</a
                     >
                   </span>
@@ -129,7 +147,7 @@
                     >
                   </div>
                 </div>
-              
+
                 <div class="item-content">
                   <div class="bbWrapper">
                     Tìm một người giống tôi chân thành và nghiêm túc , độc thân
@@ -153,7 +171,9 @@
                 <div class="header-list-style">
                   <span class="cat"> </span>
                   <span class="grid-name">
-                    <a data-toggle="modal" data-target="#exampleModal"
+                    <a
+                      data-toggle="modal"
+                      data-target="#exampleModal"
                       href="/threads/grab-noi-van-se-hoat-dong-binh-thuong-tai-vn-sau-nghi-dinh-10-2020-nd-cp.9693/"
                       >Huân Nguyễn</a
                     >
@@ -916,12 +936,26 @@
         </div>
       </div>
     </main>
-    <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+    <div
+      class="modal fade"
+      id="exampleModalCenter"
+      tabindex="-1"
+      role="dialog"
+      aria-labelledby="exampleModalCenterTitle"
+      aria-hidden="true"
+    >
       <div class="modal-dialog modal-dialog-centered" role="document">
         <div class="modal-content">
           <div class="modal-header">
-            <h5 class="modal-title" id="exampleModalCenterTitle">Modal title</h5>
-            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <h5 class="modal-title" id="exampleModalCenterTitle">
+              Modal title
+            </h5>
+            <button
+              type="button"
+              class="close"
+              data-dismiss="modal"
+              aria-label="Close"
+            >
               <span aria-hidden="true">&times;</span>
             </button>
           </div>
@@ -929,7 +963,13 @@
             ...
           </div>
           <div class="modal-footer">
-            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+            <button
+              type="button"
+              class="btn btn-secondary"
+              data-dismiss="modal"
+            >
+              Close
+            </button>
             <button type="button" class="btn btn-primary">Save changes</button>
           </div>
         </div>
@@ -952,5 +992,10 @@
       integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
       crossorigin="anonymous"
     ></script>
+    <script>
+      $(document).ready(function(){
+        $(".dropdown-toggle").dropdown();
+      });
+      </script>      
   </body>
 </html>
